@@ -4,8 +4,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # FB credentials
-FB_EMAIL = os.getenv("EMAIL")
-FB_PASSWORD = os.getenv("PASSWORD")
+FB_EMAIL = os.getenv("FB_EMAIL")
+FB_PASSWORD = os.getenv("FB_PASSWORD")
 
 # discord bot credentials
 DISCORD_WEBHOOK_URL = os.getenv("DISCORD_WEBHOOK_URL")
