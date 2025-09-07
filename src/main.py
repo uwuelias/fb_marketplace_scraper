@@ -8,8 +8,10 @@ def main():
     driver = create_driver()
     try:
         login(driver)
-        urls = get_listing_urls(driver, max_links=2)
+        urls = get_listing_urls(driver, max_links=10)
 
+        # scrape information (title, price, location, etc.) from each listing
+        # and send it to the Discord webhook
         for url in urls:
             data = scrape_listing(driver, url)
             send_webhook_message(data)

@@ -10,11 +10,13 @@ def login(driver):
     email_input = driver.find_element(By.ID, "email")
     password_input = driver.find_element(By.ID, "pass")
 
+    # replicate human typing in credentials 
     email_input.send_keys(FB_EMAIL)
     time.sleep(4)
     password_input.send_keys(FB_PASSWORD)
     time.sleep(4)
 
+    # submit login credentials
     login_button = driver.find_element(By.ID, "loginbutton")
     login_button.click()
     time.sleep(3)
