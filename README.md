@@ -12,10 +12,10 @@ This project automates tracking vehicle listings on Facebook Marketplace by usin
 
 ## Built With
 
-Python 3.13.7
-Selenium
-Discord Webhooks
-dotenv
+- Python 3.13.7
+- Selenium
+- Discord Webhooks
+- dotenv
 
 ## Prerequisites
 
